@@ -1,0 +1,30 @@
+{
+  "name": "app-rest-full-api",
+  "version": "1.0.0",
+  "description": "Aplikasi Rest API",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/alenprastya/app-rest-api.git"
+  },
+  "keywords": [
+    "Rest",
+    "APi",
+    "Node",
+    "JS"
+  ],
+  "author": "Alen Prastya",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/alenprastya/app-rest-api/issues"
+  },
+  "homepage": "https://github.com/alenprastya/app-rest-api#readme",
+  "dependencies": {
+    "body-parser": "^1.19.2",
+    "express": "^4.17.3",
+    "mysql": "^2.18.1"
+  }
+}
