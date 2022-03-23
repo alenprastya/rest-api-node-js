@@ -7,7 +7,7 @@ const conn = mysql.createConnection({
     host: "localhost",
     user: "root",
     password: "",
-    database: "rest_api"
+    database: "rest-api"
 })
 
 conn.connect((err) => {
