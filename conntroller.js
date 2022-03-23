@@ -35,3 +35,22 @@ exports.tampilBerdasarkanID = function (req, res) {
         }
     )
 }
+
+// Menambahkan Data Mahasiswa
+
+exports.tambahDataMahasiswa = function (req, res) {
+    var npm = req.body.npm;
+    var nama = req.body.nama;
+    var jurusan = req.body.jurusan;
+
+    connection.query('INSERT INTO mahasiswa (npm,nama,jurusan) VALUES(?,?,?)',
+        [npm, nama, jurusan],
+        function (error, rows, fields) {
+            if (error) {
+                console.log(error)
+            } else {
+                response.ok("Berhasil Menambahkan Data", res)
+                console.log("Berhasil menambahkan Data Mahasiswa")
+            }
+        });
+}
